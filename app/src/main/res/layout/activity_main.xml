@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile and Pervasive Computing"
+                android:textSize="24sp"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/textLab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LAB01"
+                android:textSize="20sp"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/SID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student ID"
+                android:inputType="text"
+                android:textColorHint="#757575"
+                android:textColor="#212121"
+                android:backgroundTint="#FFFFFF"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/SName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student Name"
+                android:inputType="text"
+                android:textColorHint="#757575"
+                android:textColor="#212121"
+                android:backgroundTint="#FFFFFF"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/SAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student Age"
+                android:inputType="number"
+                android:textColorHint="#757575"
+                android:textColor="#212121"
+                android:backgroundTint="#FFFFFF"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/SAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student Address"
+                android:inputType="text"
+                android:textColorHint="#757575"
+                android:textColor="#212121"
+                android:backgroundTint="#FFFFFF"
+                android:padding="12dp"
+                android:drawablePadding="8dp" />
+
+            <EditText
+                android:id="@+id/SEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#757575"
+                android:textColor="#212121"
+                android:backgroundTint="#FFFFFF"
+                android:padding="12dp"
+                android:drawablePadding="8dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="#FFFFFF"
+                android:background="#FFA500"
+                android:padding="16dp"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
